@@ -51,8 +51,7 @@ img {
 .container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    
     height: 100vh;
     width: 100%;
 
@@ -115,6 +114,8 @@ img {
     
     .container{
         height: 100vh;
+        justify-content: center;
+        align-items: center;
     }
     .card-left{
         width: 450px;
@@ -128,9 +129,6 @@ img {
 
 /* Pantallas medianas (tablets de menos de 992px) */
 @media (max-width: 991.98px) { 
-    body{
-        
-    }
     h1{
         font-size: larger;
     }
@@ -139,7 +137,7 @@ img {
     }
     .container{
         
-        align-items: flex-start;
+        padding-top: 50px;
         height: 100vh;
     }
     .container-graphs{
@@ -178,9 +176,6 @@ img {
 
 /* Pantallas muy pequeñas (móviles en portrait de menos de 576px) */
 @media (max-width: 575.98px) {
-    .container{
-        
-    }
 
     .container-graphs{
         flex-direction: column;
