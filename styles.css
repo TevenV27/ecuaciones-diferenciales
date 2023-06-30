@@ -153,33 +153,6 @@ img {
     }
  }
 
- @media (max-width: 800.98px) { 
-    .container{
-        align-items: baseline;
-        height: 100vh;
-    }
-    .container-graphs{
-        flex-direction: column;
-    }
- }
-
-/* Pantallas pequeñas (móviles en landscape de menos de 768px) */
-@media (max-width: 767.98px) { 
-    .container{
-        align-items: baseline;
-        height: 100vh;
-    }
-    .container-graphs{
-        flex-direction: column;
-    }
- }
-
-/* Pantallas muy pequeñas (móviles en portrait de menos de 576px) */
-@media (max-width: 575.98px) {
-
-    .container-graphs{
-        flex-direction: column;
-    }
 
 
- }
+
