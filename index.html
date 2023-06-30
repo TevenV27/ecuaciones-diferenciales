@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>Problemas Ecuaciones Diferenciales</title>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -8,6 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
   <div class="navbar">
@@ -20,43 +22,140 @@
       <span>Kevin Steven Victoria</span>
       <span>Nilson Andres Cuero</span>
     </div>
-    
+
   </div>
   <div class="container">
     <div class="container-graphs">
-        <div class="card-left">
-            <canvas style="cursor: pointer; " id="myChart"></canvas>
-            <br>
-            <label for="slider">Tiempo (en días):</label>
-            <input style="cursor: pointer;width: 100%; margin-top: 10px;" type="range" id="slider" min="0" max="60" value="5" step="0.1">
-            <br>
-            <br>
-            <div class="desc-left">
-                <p>En un experimento de laboratorio, se estudia el crecimiento de una población de bacterias. <br>
-                  Se sabe que el crecimiento de la población puede modelarse mediante una ecuación exponencial de la forma P(t) = P0 * e^(r * t), donde P(t) es la cantidad de bacterias en el tiempo t, P0 es la cantidad inicial de bacterias en el momento t = 0, e es la base del logaritmo natural (aproximadamente 2.71828), r es la tasa de crecimiento y t es el tiempo en días.</p>
-            </div>
-        </div>
-        <div class="card-right">
-          
-            <canvas style="cursor: pointer;" id="myChart2"></canvas>
-            <br>
-            <label for="slider2">Tiempo (en segundos):</label>
-            <input style="cursor: pointer; width: 100% ; margin-top: 10px;" type="range" id="slider2" min="0" max="60" value="5" step="0.1">
-            <br>
-            <br>
-            <div class="desc-right">
-              <p>En un experimento de laboratorio, se estudia el movimiento de un péndulo simple. Se requiere analizar la posición angular del péndulo en función del tiempo.<br>
+      <div class="card-left">
+        <canvas style="cursor: pointer; " id="myChart"></canvas>
+        <br>
+        <label for="slider">Tiempo (en días):</label>
+        <input style="cursor: pointer;width: 100%; margin-top: 10px;" type="range" id="slider" min="0" max="60"
+          value="5" step="0.1">
+        <br>
+        <br>
+        <div class="desc-left">
+          <strong>Resumen:</strong>
+          <p>En este experimento de laboratorio, se investigó el crecimiento de una población de bacterias a lo largo
+            del tiempo. Se utilizó una ecuación exponencial para modelar el crecimiento, donde la cantidad de bacterias
+            en un tiempo t se determinó mediante la fórmula P(t) = P0 * e^(r * t). En esta fórmula, P(t) representa la
+            cantidad de bacterias en el tiempo t, P0 es la cantidad inicial de bacterias en el momento t = 0, e es la
+            base del logaritmo natural, r es la tasa de crecimiento y t es el tiempo en días. La población inicial de
+            bacterias se estableció en 100 individuos, y se varió el valor del tiempo para observar cómo afectaba el
+            crecimiento de la población.</p>
+          <strong> Desarrollo:</strong>
+          <p>
+            En este experimento, se decidió estudiar el crecimiento de una población de bacterias utilizando una
+            ecuación exponencial. La ecuación seleccionada fue P(t) = P0 * e^(r * t), donde P(t) representa la cantidad
+            de bacterias en el tiempo t, P0 es la cantidad inicial de bacterias en el momento t = 0, e es la base del
+            logaritmo natural (aproximadamente 2.71828), r es la tasa de crecimiento y t es el tiempo en días.<br>
 
-                La posición angular del péndulo es el ángulo formado entre la vertical y el hilo del péndulo.<br>
-                
-                Para esta solucion se utiliza la ecuación θ(t) = A * cos(2πt / T) para calcular la posición angular del péndulo en cualquier instante de tiempo t.</p>
+            Para iniciar el experimento, se estableció una población inicial de 100 bacterias (P0 = 100) en el momento t
+            = 0. Luego, se realizaron mediciones en diferentes intervalos de tiempo para observar cómo se desarrollaba
+            la población a lo largo del tiempo. La tasa de crecimiento (r) se mantuvo constante durante todo el
+            experimento.<br><br>
+
+            Al variar el valor del tiempo (t), se registró la cantidad de bacterias presente en cada intervalo de
+            tiempo. La fórmula exponencial proporcionó una estimación del crecimiento esperado de la población en
+            función del tiempo. Al sustituir los valores conocidos en la ecuación (P0 = 100, r constante y diferentes
+            valores de t), fue posible calcular la cantidad de bacterias en cada momento.<br><br>
+
+            Los resultados obtenidos mostraron un crecimiento exponencial de la población de bacterias a lo largo del
+            tiempo. A medida que pasaba el tiempo, la cantidad de bacterias aumentaba de acuerdo con la fórmula
+            exponencial. Este comportamiento era esperado, ya que la ecuación exponencial refleja un crecimiento
+            acelerado en función del tiempo.
+
+          </p>
+          <strong>Conclusión:</strong>
+          <P>En este experimento de laboratorio, se estudió el crecimiento de una población de bacterias utilizando una
+            ecuación exponencial. La ecuación P(t) = P0 * e^(r * t) permitió modelar el crecimiento de manera efectiva,
+            tomando en cuenta la cantidad inicial de bacterias (P0), la tasa de crecimiento (r) y el tiempo transcurrido
+            (t).<br><br>
+
+            Los resultados obtenidos demostraron un crecimiento exponencial de la población de bacterias a lo largo del
+            tiempo. A medida que aumentaba el valor de t, la cantidad de bacterias también aumentaba de acuerdo con la
+            ecuación exponencial. Este hallazgo concuerda con el conocimiento previo sobre el crecimiento exponencial en
+            poblaciones biológicas.</P>
         </div>
-    
-        
+      </div>
+      <div class="card-right">
+
+        <canvas style="cursor: pointer;" id="myChart2"></canvas>
+        <br>
+        <label for="slider2">Tiempo (en segundos):</label>
+        <input style="cursor: pointer; width: 100% ; margin-top: 10px;" type="range" id="slider2" min="0" max="60"
+          value="5" step="0.1">
+        <br>
+        <br>
+        <div class="desc-right">
+
+          <p>
+
+
+            <strong>Resumen:<br><br></strong>
+
+            En este experimento de laboratorio, se investigó el movimiento de un péndulo simple y se analizó su posición
+            angular en función del tiempo. La posición angular del péndulo se define como el ángulo formado entre la
+            vertical y el hilo del péndulo. Para este análisis, se utilizó la ecuación θ(t) = A * cos(2πt / T), donde
+            θ(t) representa la posición angular en el tiempo t, A es la amplitud del péndulo y T es el período del
+            péndulo.<br><br>
+
+            <strong>Desarrollo:<br><br></strong>
+
+            En este experimento, se decidió estudiar el movimiento de un péndulo simple y analizar cómo su posición
+            angular variaba con el tiempo. La posición angular se refiere al ángulo formado entre la vertical y el hilo
+            del péndulo.<br><br>
+
+            Para calcular la posición angular del péndulo en cualquier instante de tiempo t, se utilizó la ecuación θ(t)
+            = A * cos(2πt / T). En esta ecuación, θ(t) representa la posición angular en el tiempo t, A es la amplitud
+            del péndulo y T es el período del péndulo.<br><br>
+
+            Para llevar a cabo el experimento, se fijó un péndulo simple y se midieron su amplitud y período. La
+            amplitud (A) se refiere al ángulo máximo que el péndulo alcanza desde la posición de equilibrio, mientras
+            que el período (T) es el tiempo requerido para que el péndulo complete un ciclo completo de
+            oscilación.<br><br>
+
+            Una vez obtenidos los valores de A y T, se realizaron mediciones de la posición angular del péndulo en
+            diferentes momentos de tiempo. Utilizando la ecuación θ(t) = A * cos(2πt / T), se calculó la posición
+            angular correspondiente a cada instante de tiempo.
+
+            Los resultados obtenidos mostraron cómo la posición angular del péndulo variaba a lo largo del tiempo. La
+            función coseno en la ecuación proporcionó oscilaciones periódicas de la posición angular, con la amplitud A
+            determinando el alcance máximo del péndulo y el período T influyendo en la duración de cada ciclo de
+            oscilación.<br><br>
+
+            <strong>Conclusión:<br><br></strong>
+
+            En este experimento de laboratorio, se estudió el movimiento de un péndulo simple y se analizó la posición
+            angular del péndulo en función del tiempo. La ecuación θ(t) = A * cos(2πt / T) fue utilizada para calcular
+            la posición angular en cualquier instante de tiempo.<br><br>
+
+            Los resultados obtenidos demostraron que la posición angular del péndulo seguía una función coseno, lo que
+            resultaba en oscilaciones periódicas. La amplitud (A) determinaba el alcance máximo del péndulo, mientras
+            que el período (T) influía en la duración de cada ciclo de oscilación.<br><br>
+
+            Este experimento es relevante en el estudio del movimiento armónico simple y tiene aplicaciones en campos
+            como la física, la ingeniería y la astronomía. El análisis de la posición angular del péndulo en función del
+            tiempo puede proporcionar información valiosa sobre el comportamiento de sistemas oscilantes y contribuir al
+            desarrollo de modelos y teorías relacionadas con el movimiento.<br><br>
+          </p>
+
+          <p>
+
+          </p>
+        </div>
+
+
+      </div>
+      <div style="background: white; width: 100%; display: flex; justify-content: center; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
+
+        <h3 style="color: rgb(94, 0, 0);">¡DIOS BENDIGA LAS ECUACIONES DIFERENCIALES!</h3>
       </div>
     </div>
+
   </div>
   <script src="bacterias.js"></script>
   <script src="pendulo.js"></script>
 </body>
+
 </html>
