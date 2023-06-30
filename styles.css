@@ -105,12 +105,7 @@ img {
     border-radius: 10px;
 }
 
-.text{
-    color: rgb(122, 0, 0);
-    display: none;
-    justify-content: center;
-    
-}
+
 
 /* Estilos para pantallas más pequeñas */
 
@@ -158,12 +153,7 @@ img {
         width: 85%;
         height: auto;
     }
-    .text{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 50px;
-    }
+ 
  }
 
 
