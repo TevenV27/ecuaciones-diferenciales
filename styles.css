@@ -1,10 +1,18 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
     padding: 0px;
     margin: 0px;
     font-family: 'Montserrat', sans-serif;
     height: 100vh;
+    width: 100%;
     overflow-x: hidden;
-    background: #353535;
+    background: #d1d1d1;
 }
 
 .navbar {
@@ -47,7 +55,7 @@ img {
     align-items: center;
     height: 100vh;
     width: 100%;
-    background: #d1d1d1;
+
 
 
 }
@@ -99,14 +107,60 @@ img {
 }
 
 /* Estilos para pantallas más pequeñas */
-@media (max-width: 768px) {
-    /* Reglas de estilo para pantallas con un ancho máximo de 768px */
 
-    h1 {
-        font-size: xx-large;
+/* //Pantallas muy grandes  (desktops de más de 1200px de ancho) */
+@media (max-width: 1199.98px) { 
+
+}
+
+/* Pantallas medianas (tablets de menos de 992px) */
+@media (max-width: 991.98px) { 
+    body{
+        padding-bottom: 100px;
     }
-
-    .container-graphs {
+    h1{
+        font-size: larger;
+    }
+    img{
+        height: 40px;
+    }
+    .container{
+        padding-top: 200px;
+        height: 100vh;
+    }
+    .container-graphs{
         flex-direction: column;
     }
-}
+    .card-left{
+        width: 90%;
+        height: auto;
+    }
+    .card-right{
+        width: 90%;
+        height: auto;
+    }
+ }
+
+/* Pantallas pequeñas (móviles en landscape de menos de 768px) */
+@media (max-width: 767.98px) { 
+    .container{
+        align-items: baseline;
+    }
+    .container-graphs{
+        flex-direction: column;
+    }
+ }
+
+/* Pantallas muy pequeñas (móviles en portrait de menos de 576px) */
+@media (max-width: 575.98px) {
+    .container{
+        
+        height: 100vh;
+    }
+
+    .container-graphs{
+        flex-direction: column;
+    }
+
+
+ }
