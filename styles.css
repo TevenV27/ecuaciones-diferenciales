@@ -1,0 +1,112 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Montserrat', sans-serif;
+    height: 100vh;
+    overflow-x: hidden;
+    background: #353535;
+}
+
+.navbar {
+    background: #15263b;
+    width: 100vw;
+    height: 90px;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+img {
+    height: 50px;
+    width: auto;
+    border-radius: 7px;
+}
+
+.title-nav {
+    display: flex;
+    justify-content: center;
+}
+
+.names {
+    background: #223955;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 20px 5px 20px;
+
+    border-radius: 10px;
+
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background: #d1d1d1;
+
+
+}
+
+.container-graphs {
+
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+
+}
+
+.card-left {
+
+    width: 600px;
+    margin: 0 auto;
+    background: white;
+    padding: 40px;
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+
+.desc-left {
+
+    background: rgb(236, 236, 236);
+    padding: 10px;
+    border-radius: 10px;
+
+
+}
+
+.card-right {
+    width: 600px;
+    margin: 0 auto;
+    background: white;
+    padding: 40px;
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.desc-right {
+    background: rgb(236, 236, 236);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* Estilos para pantallas más pequeñas */
+@media (max-width: 768px) {
+    /* Reglas de estilo para pantallas con un ancho máximo de 768px */
+
+    h1 {
+        font-size: xx-large;
+    }
+
+    .container-graphs {
+        flex-direction: column;
+    }
+}
