@@ -9,9 +9,7 @@ body {
     padding: 0px;
     margin: 0px;
     font-family: 'Montserrat', sans-serif;
-    height: 100vh;
     width: 100%;
-    overflow-x: hidden;
     background: #d1d1d1;
 }
 
@@ -23,6 +21,7 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    position: relative;
 }
 
 img {
@@ -51,7 +50,6 @@ img {
 .container {
     display: flex;
     flex-direction: column;
-    
     height: 100vh;
     width: 100%;
 
@@ -60,19 +58,21 @@ img {
 }
 
 .container-graphs {
-
+   
     display: flex;
-    flex-direction: row;
-
+    flex-direction: column;
+    width: 100%;
     align-items: center;
     justify-content: center;
     gap: 100px;
+    padding-top: 100px;
+    padding-bottom: 50px;
 
 }
 
 .card-left {
 
-    width: 800px;
+    width: 75%;
     margin: 0 auto;
     background: white;
     padding: 40px;
@@ -91,7 +91,7 @@ img {
 }
 
 .card-right {
-    width: 800px;
+    width: 75%;
     margin: 0 auto;
     background: white;
     padding: 40px;
@@ -105,8 +105,6 @@ img {
     border-radius: 10px;
 }
 
-
-
 /* Estilos para pantallas más pequeñas */
 
 /* //Pantallas muy grandes  (desktops de más de 1200px de ancho) */
@@ -116,15 +114,15 @@ img {
     
     .container{
         height: 100vh;
-        justify-content: center;
+        
         align-items: center;
     }
     .card-left{
-        width: 450px;
+        
         height: auto;
     }
     .card-right{
-        width: 450px;
+        
         height: auto;
     }
 }
@@ -153,7 +151,6 @@ img {
         width: 85%;
         height: auto;
     }
- 
  }
 
 
