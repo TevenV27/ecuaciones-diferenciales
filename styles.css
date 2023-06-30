@@ -43,7 +43,7 @@ img {
     justify-content: center;
     align-items: center;
     padding: 5px 20px 5px 20px;
-
+    font-size: small;
     border-radius: 10px;
 
 }
