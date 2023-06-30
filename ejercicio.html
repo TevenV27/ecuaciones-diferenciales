@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Gráfica de Crecimiento de una Población</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap" rel="stylesheet">
+  <style >
+    
+    body{
+        padding: 0px;
+        margin: 0px;
+        font-family: 'Montserrat', sans-serif;
+        
+        overflow-x: hidden;
+        background: #353535;
+    }
+
+  </style>
+</head>
+<body>
+  <!-- <div style="width: 100%; height: 100vh; position: absolute; display: flex; align-items: end;justify-content: center;">
+  <h3 style="color: rgb(226, 185, 0);">¡DIOS BENDIGA LAS ECUACIONES DIFERENCIALES!</h3>
+  </div> -->
+  <div style="background: #1f1f1f; width: 100%; height: 90px; color: white; display: flex; padding-left: 50px; align-items: center;">
+    <img style="height: 50px; width: auto; margin-left: 10px; border-radius: 7px;" src="https://universate.co/wp-content/uploads/2022/05/logo-universidad-del-valle.png" alt="logo-univalle">
+    <div style="display: flex; flex-grow: 6; justify-content: center;">
+      <h1 >ECUACIONES DIFERENCIALES - SEDE TULUÁ</h1>
+    </div>
+    <div style="display: flex; flex-direction: column; padding-right: 100px;">
+      <span>Jesus Alberto Gil</span>
+      <span>Kevin Steven Victoria</span>
+    </div>
+    
+  </div>
+  <div style="display: flex; flex-direction: column; justify-content: center; align-items: center; width: 100%; height: 90vh; background: #353535;">
+    <div style="display: flex; flex-direction: row; gap: 100px ;">
+        <div style="width: 600px; margin: 0 auto; background: white; padding: 40px; border-radius: 25px;">
+            <canvas id="myChart"></canvas>
+            <br>
+            <label for="slider">Tiempo (en días):</label>
+            <input type="range" id="slider" min="0" max="60" value="5" step="0.1">
+            <br>
+            <br>
+            <div style=" background: rgb(236, 236, 236); padding: 10px; border-radius: 10px;">
+                <p>En un experimento de laboratorio, se estudia el crecimiento de una población de bacterias. <br>
+                  Se sabe que el crecimiento de la población puede modelarse mediante una ecuación exponencial de la forma P(t) = P0 * e^(r * t), donde P(t) es la cantidad de bacterias en el tiempo t, P0 es la cantidad inicial de bacterias en el momento t = 0, e es la base del logaritmo natural (aproximadamente 2.71828), r es la tasa de crecimiento y t es el tiempo en días.</p>
+            </div>
+        </div>
+        <div style="width: 600px; margin: 0 auto; background: white; padding: 40px; border-radius: 25px;">
+          
+            <canvas id="myChart2"></canvas>
+            <br>
+            <label for="slider2">Tiempo (en segundos):</label>
+            <input type="range" id="slider2" min="0" max="60" value="5" step="0.1">
+            <br>
+            <br>
+            <div style=" background: rgb(236, 236, 236); padding: 10px; border-radius: 10px;">
+              <p>En un experimento de laboratorio, se estudia el movimiento de un péndulo simple. Se requiere analizar la posición angular del péndulo en función del tiempo.<br>
+
+                La posición angular del péndulo es el ángulo formado entre la vertical y el hilo del péndulo.<br>
+                
+                Para esta solucion se utiliza la ecuación θ(t) = A * cos(2πt / T) para calcular la posición angular del péndulo en cualquier instante de tiempo t.</p>
+          </div>
+    
+        
+        </div>
+    </div>
+    
+  </div>
+  <script src="bacterias.js"></script>
+  <script src="pendulo.js"></script>
+</body>
+</html>
